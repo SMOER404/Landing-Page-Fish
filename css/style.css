@@ -1,3 +1,107 @@
+
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  z-index: 18;
+}
+
+.overlay a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #797979;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: rgba(1, 225, 255, 0.719);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+#myNav>div>div>div>div {
+  position: relative;
+  top: 0px;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  height: 100%;
+}
+
+#myNav>a>svg {
+  position: absolute;
+  right: 205px;
+  top: 25px; 
+}
+
+#myNav>div>div>div>div>h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  line-height: 56px;
+  /* text-align: left; */
+}
+
+#myNav>div>div>div>div>h1:hover {
+  text-decoration: underline;
+  text-decoration-color: #01E1FF;
+}
+
+
+
+
+
+
+
+
+
+
+
 body {
   max-width: 1920px;
   height: 3040px;
@@ -129,6 +233,7 @@ body>div>div>div.col-xs-6.col-sm-6.col-md-6.col-lg-6.menu__container>div.menu__t
 
 .slider {
   position: relative;
+  right: 80px;
   flex: 1 328px;
   margin: 10px;
   width: 328px;
@@ -382,6 +487,7 @@ body>div.fix-el>div.fix-text>p {
 /* SLIDER */
 .slider-img-next {
   position: relative;
+  right: 70px;
   top: -50px;
   margin: 20px;
 }
@@ -390,6 +496,11 @@ body>div.fix-el>div.fix-text>p {
 .slider__main {
   position: relative;
   top: 217px;
+}
+
+body>div.slide-mobile {
+  position: relative; 
+  top: -930px;
 }
 
  .swiper-container {
@@ -514,6 +625,8 @@ body>div.navbar-fixed-top.hidden-lg>div>svg {
 }
 
 .slide__mobil-text {
+  position: relative;
+  left: 25px;
   width: 252px;
   height: 214px;
   border-radius: 10px;
