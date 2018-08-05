@@ -1,6 +1,12 @@
 .navbar-mobile {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  z-index: 20;
   height: 63px; 
   border-bottom: 1px solid silver;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
 
 .navbar__logo-fish svg{
@@ -21,7 +27,11 @@
   text-align: left;
   padding-left: 10px;
 }
-
+.header-mobile-text { 
+  position: relative;
+  top: 65px;
+  padding-bottom: 57px;
+}
 .header-mobile-text h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700; 
@@ -52,15 +62,19 @@
 
 .carousel-inner {
   position: relative;
-  left: 70px;
+  overflow: visible;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  z-index: 5;
 }
 
 .item {
-  height: 250px;
-  max-width: 250px;
+  max-height: 214px;
+  max-width: 422px;
   padding: 15px;
   border-radius: 10px;
   border: 1px solid silver;
+  overflow: hidden;
+  display: flex;
   /* opacity: 1; */
 }
 
@@ -93,6 +107,7 @@
   text-align: left; 
   z-index: -1;
   left: -30px;
+  overflow: hidden;
   position: absolute; 
   color:#01E1FF;
 }
@@ -137,3 +152,49 @@
 #text-carousel {
   margin-top: 50px;
 }
+
+
+
+/* BLOCK_TEXT_CENTER */
+
+
+.block-text-center {
+  margin-top: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 54px;
+  background: rgba(127, 127, 127, 0.205);
+}
+
+.block-text-center h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left; 
+  color: #000000;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.block-text-center p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  line-height: 21px;
+  color:#3C3C3C;
+
+}
+
+
+.slider-mobile-inner {
+}
+
+#carousel-id2 {
+  position: relative;
+  left: 0px;
+  max-width: 325px;
+  overflow: hidden;
+}
+
